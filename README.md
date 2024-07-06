@@ -14,7 +14,7 @@ A multi-threaded SSL certificate downloader that allows you to retrieve and save
 - [Contributing](#contributing)
 - [License](#license)
 
-## ✨ Features
+## ✨ <a name="features"></a>Features
 
 - 🚀 Multi-threaded certificate downloading
 - 💾 Save certificates with SHA256 hash filenames
@@ -22,13 +22,13 @@ A multi-threaded SSL certificate downloader that allows you to retrieve and save
 - 🔄 Optional overwrite of existing certificates
 - 🕰️ Customizable delay between requests
 
-## 🛠️ Requirements
+## 🛠️ <a name="requirements"></a>Requirements
 
 - GCC compiler
 - OpenSSL development libraries
 - POSIX-compliant system
 
-## 📚 Required Libraries
+## 📚 <a name="required-libraries"></a>Required Libraries
 
 Before compiling, ensure you have the following libraries installed on your system:
 
@@ -37,7 +37,7 @@ Before compiling, ensure you have the following libraries installed on your syst
 
 These libraries are typically available in most standard development environments. If you encounter any issues during compilation, make sure these libraries and their development files are properly installed on your system.
 
-## 🔨 Compilation
+## 🔨 <a name="compilation"></a>Compilation
 
 1. Clone the repository:
 ```
@@ -78,14 +78,14 @@ make full
 
 This will create an executable named `download_cert`.
 
-## 🚀 Usage
+## 🚀 <a name="usage"></a>Usage
 
 Basic usage:
 ```
 ./download_cert -if <input_file> -od <output_directory> [OPTIONS]
 ```
 
-## 🎛️ Arguments
+## 🎛️ <a name="arguments"></a>Arguments
 
 | Argument | Description | Required |
 |----------|-------------|----------|
@@ -96,7 +96,7 @@ Basic usage:
 | `-timeout <seconds>` | Connection timeout in seconds (default: 3) | ❌ No |
 | `-overwrite` | Allow overwriting of existing certificate files | ❌ No |
 
-## 📝 Examples
+## 📝 <a name="examples"></a>Examples
 
 1. Basic usage with default settings:
 ```
@@ -118,10 +118,10 @@ Basic usage:
 ./download_cert -if hosts.txt -od /path/to/certs -workers 3 -delay 1 -timeout 5 -overwrite
 ```
 
-## 🤝 Contributing
+## 🤝 <a name="contributing"></a>Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
 
-## 📄 License
+## 📄 <a name="license"></a>License
 
 This project/software is licensed for Personal Use only - see the [LICENSE](https://github.com/TheScriptGuy/download-certificates/blob/main/LICENSE.md) file for details.
